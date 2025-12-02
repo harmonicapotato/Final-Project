@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valerie Chao</title>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-size: 22px;
+      margin: 30px;
+      padding: 30px;
+    }
+
+    h2, p {
+      margin: 15px;
+    }
+
+    /* Navbar custom colors */
+    .navbar {
+      background-color: #FFEEED;
+    }
+
+    .nav-link, .navbar-brand {
+      color: black !important;
+    }
+
+    .nav-link:hover, .dropdown-item:hover {
+      background-color: #E6BEBC;
+    }
+
+    /* Slideshow styling */
+    .carousel-item img {
+      width: 100%;
+      height: 800px;
+      object-fit: contain;
+      background-color: #FFFFFF;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item img {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Valerie Chao</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Art Works
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="glitchart.html">Glitch</a></li>
+              <li><a class="dropdown-item" href="mememashup.html">MEME Mashup</a></li>
+              <li><a class="dropdown-item" href="3dsculpture.html">3D Sculpture</a></li>
+              <li><a class="dropdown-item" href="netart.html">Net Art</a></li>
+			  <li><a class="dropdown-item" href="p5.js.html">p5.js</a></li>
+			  <li><a class="dropdown-item" href="finalproject.html">Final Project</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slideshow -->
+  <div id="myCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/FinalProject_Notepad++_VC.png" class="d-block w-100" alt="Orange Flowers Glitched Image">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Orange Flowers Glitched Image</h5>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/Illustrator_Illustration_Micro-Macro-Assignment_VC.png" class="d-block w-100" alt="Illustrator Illustration">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Illustrator Illustration</h5>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/3DSculptureRenderVC.png" class="d-block w-100" alt="3D Bedroom Sculpture">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>3D Bedroom Sculpture</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+</body>
+</html>
